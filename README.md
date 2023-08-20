@@ -1,2 +1,2 @@
 # Unity-Physics
-A collection of demos and explenations of diffrent ways to utilize physics in unity. Like cars, springs, gravity, ETC
+A collection of demos and explanations of different ways to utilize physics in unity. Like cars, springs, gravity, ETC
