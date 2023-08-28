@@ -17,7 +17,7 @@ public class InputManager : MonoBehaviour
       DontDestroyOnLoad(gameObject);
    }
 
-   public static Vector2 Direction()
+   public static Vector2 MovementDirection()
    {
       float x = 0;
       float y = 0;
@@ -30,8 +30,12 @@ public class InputManager : MonoBehaviour
       return new Vector2(x, y);
    }
 
-   public static Vector3 CursorPosition()
+    public static Vector2 Mouse()
    {
-      return Input.mousePosition;
+      float x = Input.GetAxisRaw("Mouse X");
+      float y = Input.GetAxisRaw("Mouse Y");
+      return new Vector2(x,y);
    }
+
+   //More can be added this is just a template :)
 }
