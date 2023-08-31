@@ -70,7 +70,7 @@ public class InputManager : MonoBehaviour
         //Forward
         if (PlayerPrefs.HasKey(Setting.Forward.ToString()))
         {
-            KeyCode forward = GetKeycodeFromString(PlayerPrefs.GetString(Setting.Forward.ToString()));
+            KeyCode forward = GetKeyCodeFromString(PlayerPrefs.GetString(Setting.Forward.ToString()));
             _instance.forward = forward;
         }
         else
@@ -81,7 +81,7 @@ public class InputManager : MonoBehaviour
         //Left
         if (PlayerPrefs.HasKey(Setting.Left.ToString()))
         {
-            KeyCode left = GetKeycodeFromString(PlayerPrefs.GetString(Setting.Left.ToString()));
+            KeyCode left = GetKeyCodeFromString(PlayerPrefs.GetString(Setting.Left.ToString()));
             _instance.left = left;
         }
         else
@@ -92,7 +92,7 @@ public class InputManager : MonoBehaviour
         //Right
         if (PlayerPrefs.HasKey(Setting.Right.ToString()))
         {
-            KeyCode right = GetKeycodeFromString(PlayerPrefs.GetString(Setting.Right.ToString()));
+            KeyCode right = GetKeyCodeFromString(PlayerPrefs.GetString(Setting.Right.ToString()));
             _instance.right = right;
         }
         else
@@ -103,7 +103,7 @@ public class InputManager : MonoBehaviour
         //Back
         if (PlayerPrefs.HasKey(Setting.Back.ToString()))
         {
-            KeyCode back = GetKeycodeFromString(PlayerPrefs.GetString(Setting.Back.ToString()));
+            KeyCode back = GetKeyCodeFromString(PlayerPrefs.GetString(Setting.Back.ToString()));
             _instance.back = back;
         }
         else
@@ -114,7 +114,7 @@ public class InputManager : MonoBehaviour
         //Jump
         if (PlayerPrefs.HasKey(Setting.Jump.ToString()))
         {
-            KeyCode jump = GetKeycodeFromString(PlayerPrefs.GetString(Setting.Jump.ToString()));
+            KeyCode jump = GetKeyCodeFromString(PlayerPrefs.GetString(Setting.Jump.ToString()));
             _instance.jump = jump;
         }
         else
@@ -146,7 +146,7 @@ public class InputManager : MonoBehaviour
         #endregion
     }
 
-    public static KeyCode GetKeycodeFromString(string key)
+    public static KeyCode GetKeyCodeFromString(string key)
     {
         KeyCode keyCode = (KeyCode) System.Enum.Parse(typeof(KeyCode), key);
 
