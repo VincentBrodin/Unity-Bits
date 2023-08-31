@@ -148,7 +148,9 @@ public class InputManager : MonoBehaviour
 
     public static KeyCode GetKeycodeFromString(string key)
     {
-        return KeyCode.None;
+        KeyCode keyCode = (KeyCode) System.Enum.Parse(typeof(KeyCode), key);
+
+        return keyCode;
     }
     #endregion
 }
